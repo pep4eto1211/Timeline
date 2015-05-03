@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Timeline</title>
+        <script type = "text/javascript" src="Scripts/jq.js"></script>
+        <script type = "text/javascript" src="Scripts/script.js"></script>
+        <link rel = "stylesheet" type = "text/css" href="Styles/style.css"/>
+    </head>
+    <body>
+        <div id = "hider">
+        </div>
+        <img src = "Images/load.gif" id = "loadingAnimation"/>
+        <div id = "dateChoser">
+            <center>
+                <input type = "text" id = "dateTextBox"/>
+                <select id = "monthSelector">
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                </select>
+                <div id = "dateChoserConfirm" title="Go">
+                    <img src="Images/go.png" id = "dateChoserConfirmIcon"/>
+                </div>
+                <div id = "dateChoserCancel" title="Cancel">
+                    <img src="Images/cancelw.png" id = "dateChoserCancelIcon"/>
+                </div>
+                <div class = "clear">
+            </center>
+        </div>
+        <div id = "addNewEventButton" title="Add new event">
+            <div>+</div>
+        </div>
+        <div id = "addNewEventGlobal">
+            <h3>Create new event:</h3>
+            <div id = "createNewEventGlobalForm">
+                <input type = "text" id = "cnegName" placeholder="Event name"/><br>
+                <input type = "text" id = "cnegLocation" placeholder="Event location"/><br>
+                <input type = "text" id = "cnegYName" placeholder="Your name"/><br>
+                <input type = "text" id = "cnegDate" placeholder="Date"/>
+                <select id = "cnegMonth">
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                </select>
+            </div>
+            <div id = "createNewEventGlobalControls">
+                <div id = "cnegConfirmButton" title="Create">
+                    <img src="Images/completedw.png" id = "cnegConfirmIcon"/>
+                </div>
+                <div id = "cnegCancelButton" title="Cancel">
+                    <img src="Images/cancelw.png" id = "cnegCancelIcon"/>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div id = "finishEventWindow">
+            <h3>Finish event:</h3>
+            <div id = "finishEventInputBox">
+                <input type = "text" id = "finishEventInput" placeholder = "Your name"/>
+            </div>
+            <div id = "finishEventControls">
+                <div id = "finishEventConfirmButton" title = "Finish">
+                    <img src="Images/completedw.png" id = "feConfirmIcon"/>
+                </div>
+                <div id = "finishEventCancelButton" title = "Cancel">
+                    <img src="Images/cancelw.png" id = "feCancelIcon"/>
+                </div>
+                <div class = "clear">
+                </div>
+            </div>
+            <div class = "clear">
+            </div>
+        </div>
+        <div id = "monthName">
+            May
+        </div>
+        <header>
+            <div id = "titleBox">
+                <h2 id = "title">Timeline</h2>
+            </div>
+            <div id = "currentDate">
+            </div>
+            <div id = "goToDateButton">
+                Go to date
+            </div>
+            <div id = "clear">
+            </div>
+        </header>
+        <main>
+            <div id = "wrapper">
+                <div id = "leftSide">
+                </div>
+                <div id = "datesArea">
+                    <div class="devider" id = "firstDevider">
+                    </div>
+                </div>
+                <div id = "rightSide">
+                </div>
+                <div id = "clear">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
